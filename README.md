@@ -15,95 +15,148 @@ Jane Doe
 
   
 Table of Contents
+
 1	System Description	3
+
 1.1	System Attributes	3
+
 1.2	System Description and Mission	3
+
 1.3	Security Requirements	3
+
 1.4	System Environment	4
+
 1.5	Network Diagram(s)	5
+
 1.6	Dependencies and Interconnections	6
+
 2	Plan of Action and Milestones	7
+
 3	Security Controls	8
+
 3.1	Access Management	8
-3.1.1	EXAMPLE: Account Management	8
+
 3.2	Personnel Security	9
+
 3.3	Security Awareness and Training	9
+
 3.4	Physical Security	9
+
 3.5	System Communication Protection	9
+
 3.6	Remote Access	9
+
 3.7	Change Management	9
+
 3.8	Malicious Software Protection	9
+
 3.9	Logging Configuration	9
+
 3.10	Media Protection	9
+
 4	Cyber Security Incident Response Plan	10
+
 5	Recovery Plan	11
+
 6	Contacts – Vendor, Supplier, Internal	12
 
 
 
   
 1	System Description
+
 1.1	System Attributes
+
 System Name	Trojan Bricks – Building Block
+
 Impact Categorization	Security Category design and marketing information = {(confidentiality, moderate), (integrity, high), (availability, moderate)}
-System Owner	•	Jane Doe
-•	System Administrator
-•	Trojan Bricks
-•	Little Rock, AR
-•	1 501 123 4567
-•	Jane_Doe@trojanbricks.com
-Security Manager	•	Scott White
-•	Security Administrator
-•	Trojan Bricks
-•	Little Rock, AR
-•	1 501 123 4567
-•	Scott_White@trojanbricks.com
-Primary System Administrator(s)	•	Jane Doe
-•	System Administrator
-•	Trojan Bricks
-•	Little Rock, AR
-•	1 501 123 4567
-•	Jane_Doe@trojanbricks.com
-Primary System Users	Trojan Brick employees, customers and vendors
+
+System Owner
+
+•	Jane Doe  	•	System Administrator	 •	Trojan Bricks	•	Little Rock, AR		•	1 501 123 4567	•	Jane_Doe@trojanbricks.com
+
+
+Security Manager	
+•	Scott White•	Security Administrator		•	Trojan Bricks•	Little Rock, AR•	1 501 123 4567•	Scott_White@trojanbricks.com
+
+
+Primary System Administrator(s)	
+•	Jane Doe•	System Administrator•	Trojan Bricks•	Little Rock, AR•	1 501 123 4567•	Jane_Doe@trojanbricks.com
+
+
+Primary System Users
+Trojan Brick employees, customers and vendors
+
+
 1.2	System Description and Mission
+
 The Trojan Bricks system is a general support system.  The system contains a single internet facing web server with a back-end database server, and active directory server, a file server, and a firewall. The web server itself is in a DMZ while the active directory, file server, and database server are all in an internal network that is separated from the DMZ with a firewall.
+
 The back-end database server uses mysql and contains tables for products, customers, and orders. The Active Directory server is used to manage all employee and contractor accounts. The file server contains folders for Accounting, Board Documents, Engineering and Design, Human Resources, Marketing, and User Shares. 
+
 The web server is accessible to the public via the internet. The back-end server has limited accessibility to front-end users, accounting, and ITWorks!. The Active Directory server is accessible by ITWorks! and Trojan Bricks Cyber Security Consultants. The File server has various levels of accessibility for each employee, department, ITWorks!, and Evolution.
+
+
 1.3	Security Requirements
+
 Requirement	Impact	Description
+
 Confidentiality	Med	Customer accounts are protected to secure the customers identity and payment information. Trojan Bricks patents, deigns, and future plans are protected to prevent theft of organizational assets and undesired exposure of organizational plans. These protections are made from outside and within.
+
 Integrity	High	The prevention of unauthorized modification or destruction of product design, marketing schemes, and package design is the primary task of the security system. 
+
 Availability	Med	The webserver and back-end database will be available to customers for shopping and checking on order status will always be protected. The file will also be protected to ensure that staff availability is secured.
  
  
 1.4	System Environment
+
 Trojan Bricks is a small company with a managed system environment. As mentioned in section 1.2, the system contains a single internet facing web server with a back-end database server, an active directory server, a file server, and a firewall. The web server is in a DMZ with a firewall between it and the internal network. There are multiple desktop computers through out the network with multiple user access as well as mobile devices such as laptops, tablets, and phones. 
 Special security concerns consist of unsecured wireless network, multiple users and false authentication, unsecured vendor access, malware and ransomware, phishing, improper data backup, and water sprinklers. With multiple users being present, user privileges are a special concern as well.  
 
+
 1.5	Network Diagram(s)
+
+
   
+  
 1.6	Dependencies and Interconnections
+
 ●	Name of System: Building Block
+
 ●	Organization: ITWorks!
+
 ●	Type of interconnection: Internet, VPN
+
 ●	Authorizations for interconnection: ISA, MOU
+
 ●	Date of Agreement: 01/01/2020
+
 ●	FIPS 199 Category: SC information system = {(confidentiality, moderate), (integrity, moderate), (availability, moderate)}
+
 ●	Certified and Accredited
+
 ●	Jane Doe – Primary System Administrator
 
 
 •	Name of System: Building Block
+
 •	Organization: Evolution
+
 •	Type of interconnection: Internet, VPN
+
 •	Authorizations for interconnection: ISA, MOU
+
 •	Date of Agreement: 01/01/2020
+
 •	FIPS 199 Category: SC administrative information = {(confidentiality, Moderate), (integrity, Moderate), (availability, Low)}
+
 •	Certified and Accredited
+
 •	Jane Doe – Primary System Administrator
 
   
 2	Plan of Action and Milestones
+
 Use this section to specify a plan of action to address unmet or partially met security control objectives or to track vulnerability mitigation.
 POAM ID	Security Control/Issue	Plan of Action	Responsible	Milestone Date
 ACCESS CONTROL
